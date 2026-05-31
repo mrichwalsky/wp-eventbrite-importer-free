@@ -18,7 +18,7 @@ WordPress plugin to sync Eventbrite organizer events into a custom post type and
 3. Go to `Settings -> Eventbrite Events`.
 4. Enter:
    - Eventbrite API token
-   - Organizer ID (default set to `7915942412`)
+   - Organizer ID
    - Events limit
 5. Save settings and click `Run Sync Now`.
 

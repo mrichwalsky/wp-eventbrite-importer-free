@@ -218,7 +218,7 @@ class Eventbrite_Events_Sync_Plugin {
 	private function get_settings() {
 		$defaults = array(
 			'api_token'    => '',
-			'organizer_id' => '7915942412',
+			'organizer_id' => '',
 			'events_limit' => 20,
 			'skip_existing_titles' => 0,
 		);
