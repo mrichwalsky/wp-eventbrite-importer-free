@@ -24,8 +24,9 @@
 
 .eb-upcoming-events .eb-event-image img {
 	display: block;
-	width: 96px;
-	height: 96px;
+	width: 96px !important;
+	height: 96px !important;
+	max-width: 96px !important;
 	object-fit: cover;
 	border-radius: 4px;
 }

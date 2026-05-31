@@ -584,6 +584,7 @@ class Eventbrite_Events_Sync_Plugin {
 			$current_page = max(1, intval(wp_unslash($_GET[$page_param])));
 		}
 		$now = current_time('mysql');
+		wp_enqueue_style('ebes-frontend');
 		$cache_key = $this->get_shortcode_cache_key($atts, $current_page);
 		$cached = get_transient($cache_key);
 		if (is_string($cached) && $cached !== '') {
@@ -613,7 +614,6 @@ class Eventbrite_Events_Sync_Plugin {
 		}
 
 		ob_start();
-		wp_enqueue_style('ebes-frontend');
 		echo '<div id="' . esc_attr($anchor) . '" class="eb-upcoming-events">';
 		while ($query->have_posts()) {
 			$query->the_post();
